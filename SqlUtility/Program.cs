@@ -13,7 +13,10 @@ namespace SqlUtility
         {
             Console.WriteLine(Directory.GetCurrentDirectory());
             Console.WriteLine("Enter file name");
-            string f = Console.ReadLine(), q;
+
+            string f = Console.ReadLine(), q , t;
+
+            Query query;
             
             SqlUtility s = new SqlUtility(f);
             while (true)
@@ -21,7 +24,13 @@ namespace SqlUtility
 
                 Console.Write("Enter sql query: ");
                 q = Console.ReadLine();
-                s.ExecuteQuery(q);
+
+                Console.WriteLine("Enter TableName: ");
+                t = Console.ReadLine();
+
+                query = new Query(t, q);
+
+                SqlUtility.ExecuteQuery(query);
             }
         }
     }

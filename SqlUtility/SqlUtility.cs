@@ -12,42 +12,21 @@ namespace SqlUtility
     class SqlUtility
     {
 
-        private string fileName;
-
-        public SqlUtility(string fileName)
-        {
-            try
-            {
-                string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data source=" + Directory.GetCurrentDirectory() + "/" + FileName;
-                OleDbConnection conn = new OleDbConnection(connString);
-                this.fileName = fileName;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("The database was not found. Try again.");
-            }
-        }
-
-        public string FileName
-        {
-            get { return this.fileName; }
-            set { this.fileName = value; }
-        }
-
-
         public static void ExceptionHandler(Exception e)
         {
             Console.WriteLine("Oh snap!, An error occurred");
             Console.WriteLine("Error: " + e.Message);
             Console.WriteLine("Please return to the start and try again");
         }
-
-        public static OleDbConnection ConnectToDataBase()
-        {
+       
+        public static OleDbConnection ConnectToDataBase(Query q)
+        {            
             try
             {
-                string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data source=" + Directory.GetCurrentDirectory() + "/" + FileName;
+                string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data source=" + Directory.GetCurrentDirectory() + "/" + q.FileName;
+
                 OleDbConnection conn = new OleDbConnection(connString);
+
                 return conn;
             }
             catch (Exception ex)
@@ -56,15 +35,15 @@ namespace SqlUtility
             }
         }
 
-        public void ExecuteQuery(string query)
+        public static void ExecuteQuery(Query q)
         {
             try
             {
-                OleDbConnection connection = ConnectToDataBase();
+                OleDbConnection connection = ConnectToDataBase(q);
 
                 connection.Open();
 
-                OleDbCommand command = new OleDbCommand(query, connection);
+                OleDbCommand command = new OleDbCommand(q.Sql, connection);
 
                 command.ExecuteNonQuery();
 
@@ -77,33 +56,38 @@ namespace SqlUtility
                 ExceptionHandler(e);
             }
         }
-        public static DataTable ExecuteDataTable(string query)
+
+        public static DataTable ExecuteDataTable(Query q)
         {
-            OleDbConnection conn = ConnectToDataBase();
+            OleDbConnection conn = ConnectToDataBase(q);
             conn.Open();
-            OleDbDataAdapter tableAdapter = new OleDbDataAdapter(query, conn);
+
+            OleDbDataAdapter tableAdapter = new OleDbDataAdapter(q.Sql, conn);
+
             DataTable dt = new DataTable();
+
             tableAdapter.Fill(dt);
+
             return dt;
         }
-        public static void PrintDataTable(DataTable dt)
-        {
-            string printStr = "<table border='1'>";
+
+        public static string printDataTable(DataTable dt)
+        {            
+
+            string printStr = "";
 
             foreach (DataRow row in dt.Rows)
-            {
-                printStr += "<tr>";
+            {                
                 foreach (object myItemArray in row.ItemArray)
                 {
 
-                    printStr += "<td>" + myItemArray.ToString() + "</td>";
+                    printStr += myItemArray.ToString() + ", ";
                 }
-                printStr += "</tr>";
-            }
-            printStr += "</table>";
+
+                printStr += "\n";
+            }            
 
             return printStr;
         }
-    }
     }
 }
