@@ -32,20 +32,20 @@ namespace SqlUtility
 
         public string TableName
         {
-            get { return this.tableName; }
-            set { this.tableName = value; }
+            get { return tableName; }
+            set { tableName = value; }
         }    
 
         public string Sql
         {
-            get { return this.sql; }
-            set { this.sql = value; }
+            get { return sql; }
+            set { sql = value; }
         }
 
         public string FileName
         {
-            get { return this.fileName; }
-            set { this.fileName = value; }
+            get { return fileName; }
+            set { fileName = value; }
         }
 
 
