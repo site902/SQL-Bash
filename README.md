@@ -2,13 +2,13 @@
 
 SQL Utility console bash for educational purposes.
 ### What the fuck?
-This utility is meant to demonstrate the usage of SQL sentences in c# language, for stupid kids and even dumber teachers.
+This simple utility is meant to demonstrate the usage of SQL commands in C# language, and to embed the concept of transferring data from the client to the server, vice versa.
 
 
 
 
 
-# License
+## License
 The MIT License (MIT)
 Copyright (c) 2016 Roey Vidan, Or Shtrauch
 
