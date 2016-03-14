@@ -11,22 +11,17 @@ namespace SqlUtility
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Directory.GetCurrentDirectory());
             Console.WriteLine("Enter file name");
             string f = Console.ReadLine(), q;
-
+            
+            SqlUtility s = new SqlUtility(f);
             while (true)
             {
-                try
-                {
-                    Console.Write("Enter sql query: ");
-                    q = Console.ReadLine();
-                    MyAdoHelper.DoQuery(f, q);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                
+
+                Console.Write("Enter sql query: ");
+                q = Console.ReadLine();
+                s.ExecuteQuery(q);
             }
         }
     }
