@@ -1,0 +1,6 @@
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\bin\Debug\SqlUtility.exe.config
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\obj\Debug\SqlUtility.csprojResolveAssemblyReference.cache
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\bin\Debug\SqlUtility.exe
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\bin\Debug\SqlUtility.pdb
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\obj\Debug\SqlUtility.exe
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SqlUtility\obj\Debug\SqlUtility.pdb
