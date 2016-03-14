@@ -20,6 +20,10 @@ public class MyAdoHelper
         //
         // TODO: Add constructor logic here
         //
+        
+
+
+        /// Fuck dorit
     }
 
 
