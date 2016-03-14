@@ -11,26 +11,36 @@ namespace SqlUtility
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Directory.GetCurrentDirectory());
-            Console.WriteLine("Enter file name");
+            Console.WriteLine("choose: ");
+            Console.WriteLine("0.Exit");
+            Console.WriteLine("1.Start");
 
-            string f = Console.ReadLine(), q , t;
+            string choise = Console.ReadLine();
 
-            Query query;
-            
-            SqlUtility s = new SqlUtility(f);
-            while (true)
+            if (choise == "0")
             {
+                Environment.Exit(-1);
+            }
+            else
+            {
+                Console.WriteLine(Directory.GetCurrentDirectory());
 
-                Console.Write("Enter sql query: ");
-                q = Console.ReadLine();
+                Console.WriteLine("Enter file name");
+                string f = Console.ReadLine();
 
-                Console.WriteLine("Enter TableName: ");
-                t = Console.ReadLine();
+                Query query = new Query(f);
 
-                query = new Query(t, q);
+                while (true)
+                {
 
-                SqlUtility.ExecuteQuery(query);
+                    Console.Write("Enter sql query: ");
+                    query.Sql = Console.ReadLine();
+
+                    Console.WriteLine("Enter TableName: ");
+                    query.TableName = Console.ReadLine();
+                    
+                    SqlUtility.ExecuteQuery(query);
+                }            
             }
         }
     }
