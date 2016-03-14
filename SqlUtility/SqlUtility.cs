@@ -24,13 +24,13 @@ namespace SqlUtility
             try
             {
                 string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data source=" + Directory.GetCurrentDirectory() + "/" + q.FileName;
-
+                Console.WriteLine(connString);
                 OleDbConnection conn = new OleDbConnection(connString);
-
                 return conn;
             }
             catch (Exception ex)
             {
+                return null;
                 throw ex;
             }
         }
@@ -39,17 +39,19 @@ namespace SqlUtility
         {
             try
             {
-                OleDbConnection connection = ConnectToDataBase(q);
-
-                connection.Open();
-
-                OleDbCommand command = new OleDbCommand(q.Sql, connection);
-
-                command.ExecuteNonQuery();
-
-                command.Dispose();
-
-                connection.Close();
+                if (ConnectToDataBase(q) != null)
+                {
+                    OleDbConnection connection = ConnectToDataBase(q);
+                    connection.Open();
+                    OleDbCommand command = new OleDbCommand(q.Sql, connection);
+                    command.ExecuteNonQuery();
+                    command.Dispose();
+                    connection.Close();
+                }
+                else
+                {
+                    throw new Exception("Connection to database failed. Check that the filename is correct and try again.");
+                }
             }
             catch (Exception e)
             {

@@ -24,21 +24,20 @@ namespace SqlUtility
             else
             {
                 Console.WriteLine(Directory.GetCurrentDirectory());
-
+                inputFileName:
                 Console.WriteLine("Enter file name");
                 string f = Console.ReadLine();
-
+                if (!File.Exists(Directory.GetCurrentDirectory() + f))
+                {
+                    Console.WriteLine("The file does not exist. Try again");
+                    goto inputFileName;
+                }
                 Query query = new Query(f);
 
                 while (true)
                 {
-
                     Console.Write("Enter sql query: ");
                     query.Sql = Console.ReadLine();
-
-                    Console.WriteLine("Enter TableName: ");
-                    query.TableName = Console.ReadLine();
-                    
                     SqlUtility.ExecuteQuery(query);
                 }            
             }

@@ -8,3 +8,13 @@ D:\OneDrive\Programming_l\SQL\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.exe.confi
 D:\OneDrive\Programming_l\SQL\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.exe
 D:\OneDrive\Programming_l\SQL\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.pdb
 D:\OneDrive\Programming_l\SQL\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.csprojResolveAssemblyReference.cache
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.exe.config
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.exe
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.pdb
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.exe.manifest
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.application
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.exe
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.pdb
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.csprojResolveAssemblyReference.cache
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.exe.manifest
+C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.application
