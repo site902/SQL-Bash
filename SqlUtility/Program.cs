@@ -38,6 +38,7 @@ namespace SqlUtility
                 {
                     Console.Write("Enter sql query: ");
                     query.Sql = Console.ReadLine();
+
                     SqlUtility.ExecuteQuery(query);
                 }            
             }

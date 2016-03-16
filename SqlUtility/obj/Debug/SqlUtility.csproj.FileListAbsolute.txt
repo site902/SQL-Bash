@@ -18,3 +18,6 @@ C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\
 C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.csprojResolveAssemblyReference.cache
 C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.exe.manifest
 C:\Users\Media Center\Documents\Computer\Excercise\SQL_Prac\תיקיה חדשה\SqlUtility\SQL-Bash\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.application
+C:\Users\ororo\Documents\sql\SQL-Bash\SqlUtility\bin\Debug\SqlUtility.exe.config
+C:\Users\ororo\Documents\sql\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.exe
+C:\Users\ororo\Documents\sql\SQL-Bash\SqlUtility\obj\Debug\SqlUtility.pdb
